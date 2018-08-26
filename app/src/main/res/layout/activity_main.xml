@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.animation.MainActivity">
+
+    <TextView
+        android:id="@+id/hello"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+         />
+    <View
+        android:background="#FF0000"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_anchor="@id/hello"
+        app:layout_anchorGravity="bottom|right"
+
+        >
+
+    </View>
+
+    <Button
+        android:text="Left"
+        android:onClick="startLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        />
+
+    <Button
+        android:text="Right"
+        android:onClick="startRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>
